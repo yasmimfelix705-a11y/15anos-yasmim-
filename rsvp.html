@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Confirmação | Yasmim 15 anos</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+<section class="secao confirmacao">
+
+
+<img src="imagens/monograma.png"
+class="monograma"
+alt="Monograma Yasmim">
+
+
+<h1>Yasmim</h1>
+
+
+<h2>Confirmação de presença</h2>
+
+
+
+<p>
+Será uma alegria ter você comigo nessa noite especial.
+</p>
+
+
+
+
+<div class="formulario">
+
+
+<label>
+Nome do convidado:
+</label>
+
+
+<br>
+
+
+<input 
+type="text"
+id="nome"
+placeholder="Digite seu nome">
+
+
+
+<br><br>
+
+
+
+
+<label>
+Quantidade de pessoas:
+</label>
+
+
+<br>
+
+
+<select id="quantidade">
+
+
+<option value="1">
+1 pessoa
+</option>
+
+
+<option value="2">
+2 pessoas
+</option>
+
+
+<option value="3">
+3 pessoas
+</option>
+
+
+<option value="4">
+4 pessoas
+</option>
+
+
+<option value="5">
+5 pessoas
+</option>
+
+
+</select>
+
+
+
+<br><br>
+
+
+
+
+<button class="botao" onclick="confirmar()">
+
+Confirmar presença
+
+</button>
+
+
+
+<p id="mensagem"></p>
+
+
+
+</div>
+
+
+
+<br>
+
+
+<a href="index.html" class="botao">
+
+Voltar ao convite
+
+</a>
+
+
+
+</section>
+
+
+
+
+
+
+<script>
+
+
+function confirmar(){
+
+
+let nome =
+document.getElementById("nome").value;
+
+
+
+let quantidade =
+document.getElementById("quantidade").value;
+
+
+
+let mensagem =
+document.getElementById("mensagem");
+
+
+
+
+if(nome.trim() === ""){
+
+
+mensagem.innerHTML =
+"Por favor, digite seu nome.";
+
+
+mensagem.style.color =
+"red";
+
+
+return;
+
+
+}
+
+
+
+
+mensagem.innerHTML =
+"Obrigado, " + nome +
+"! Sua presença foi confirmada para " +
+quantidade +
+" pessoa(s). 💙";
+
+
+
+mensagem.style.color =
+"#102a63";
+
+
+
+}
+
+
+
+
+
+</script>
+
+
+
+</body>
+
+</html>
